@@ -1,0 +1,42 @@
+/* Import Google Fonts - Formal fonts */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans+Telugu:wght@100..900&family=Poppins:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Global Styles */
+.text-sm {
+  font-size: 14px;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.ubuntu-font {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal; 
+}
+
+.tile-card {
+    background: #fff;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+    border: 1px solid #eaeaea;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #000;
+  --bs-tooltip-color: #fff;
+}

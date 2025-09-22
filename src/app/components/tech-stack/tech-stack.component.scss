@@ -1,0 +1,28 @@
+.tech-stack-item {
+  padding: 3px 9px;
+  font-size: 13px;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 7px;
+  transition: all .2s ease-in-out;
+  border: 1px solid #eaeaea;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: none;
+  transition: transform 0.3s ease;
+    
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Ensure table cells don't restrict width */
+.table td {
+  white-space: normal;
+  width: auto;
+  max-width: none;
+  vertical-align: middle;
+}
+

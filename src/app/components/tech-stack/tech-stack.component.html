@@ -1,0 +1,44 @@
+<div class="row mx-1 py-2 tile-card ubuntu-font mb-1">
+    <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-laptop-code"></i>
+        <p class="small mb-0 font-bold ">Tech Stack</p>
+    </div>
+    <div class="tech-stack-sections m-2">
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td>
+                        <h3 class="text-sm">Frontend</h3>
+                    </td>
+                    <td>
+                        @for (item of techStack.frontend; track $index) {
+                            <span class="tech-stack-item">{{ item }}</span> 
+                        }
+                    </td>
+                </tr>
+                <tr>
+                      <td> <h3 class="text-sm">Backend</h3></td>
+                    <td> @for (item of techStack.backend; track $index) {
+                            <span class="tech-stack-item">{{ item }}</span> 
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td> <h3 class="text-sm">Devops and Cloud</h3></td>
+                    <td> @for (item of techStack.cloud; track $index) {
+                            <span class="tech-stack-item">{{ item }}</span> 
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td> <h3 class="text-sm">Tools</h3></td>
+                    <td>
+                     @for (item of techStack.tools; track $index) {
+                            <span class="tech-stack-item">{{ item }}</span> 
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

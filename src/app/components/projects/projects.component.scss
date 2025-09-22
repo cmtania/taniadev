@@ -1,0 +1,11 @@
+a {
+    color: #000;
+}
+
+.project-card{
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+}

@@ -1,0 +1,57 @@
+// Social Links Styling
+.social-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.social-link {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: inherit;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.social-icon-container {
+  transition: color 0.2s ease;
+}
+
+.social-link-text {
+  font-size: 10px;
+  transition: color 0.2s ease;
+}
+
+// Contact Links Styling
+.contact-link {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: inherit;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.contact-icon {
+  transition: color 0.2s ease;
+}
+
+.contact-label {
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.contact-text {
+  font-size: 9px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-arrow {
+  transition: color 0.2s ease;
+}

@@ -1,0 +1,27 @@
+<div class="p-2">
+       <div class="d-flex align-items-center gap-2 mb-2">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <p class="small mb-0 font-bold">Experience</p>
+    </div>
+
+  <div class="timeline-container position-relative mt-4">
+    <div class="timeline-line position-absolute"></div>
+
+    @for (item of experiences; track item.id) {
+    <div class="timeline-item position-relative" [class.timeline-current]="item.duration === 'Present'">
+          <div class="timeline-dot position-absolute"></div>
+          <div class="timeline-content">
+            <h3 class="role-title text-sm font-bold">{{ item.role }}</h3>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="company-name">{{ item.company }}</span>
+              <span class="year-badge"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                [attr.data-bs-title]="item.duration === 'Present' ? item.info : item.info"
+              >{{ item.duration }}</span>
+            </div>
+          </div>
+        </div>
+    }
+  </div>
+</div>

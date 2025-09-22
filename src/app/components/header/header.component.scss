@@ -1,0 +1,135 @@
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 15%;
+    transition: all 0.3s ease;
+}
+
+.super-saiyan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.glowing-eye {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.left-eye {
+    top: 32%;
+    left: 28%;
+}
+
+.right-eye {
+    top: 32%;
+    right: 28%;
+}
+
+.energy-aura {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    right: 25%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, #333 20%, #000 50%, #333 80%, transparent 100%);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic-container:hover {
+    .profile-pic {
+        filter: brightness(1.1) contrast(1.1);
+        transform: scale(1.02);
+    }
+    
+    .super-saiyan-overlay {
+        opacity: 1;
+    }
+}
+
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span.profile-name {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+       font-family: "Ubuntu", sans-serif;
+        font-style: normal; 
+    }
+    .light-bulb {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+.location,
+.job-title  {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-style: normal; 
+}
+
+#schedule-call {
+    margin-right: 10px;
+}
+
+#schedule-call,
+#resume {
+    width: 140px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2px 2px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 0, 0, 0.317);
+    } 
+}
+
+.header-button  {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: inherit;
+  transition: all 0.2s ease;
+  
+
+}
+
+// #resume {
+//     background-color: #000;
+//     color: #fff;
+//     border-color: #000;
+    
+//     &:hover {
+//         transform: translateY(-2px);
+//         background-color: #333;
+//     }
+// }
