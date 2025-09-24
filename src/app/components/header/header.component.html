@@ -2,18 +2,17 @@
     <div class="col-12 col-sm-4 col-md-3 text-center text-sm-start mb-3 mb-sm-0">
         <div class="profile-pic-container">
             <img class="profile-pic img-fluid" src="/profile-pic.jpg" alt="Profile Picture">
-            <div class="super-saiyan-overlay">
-                <div class="glowing-eye left-eye"></div>
-                <div class="glowing-eye right-eye"></div>
-                <div class="energy-aura"></div>
-            </div>
         </div>
     </div>
     <div class="col-12 col-sm-8 col-md-9">
         <div class="row">
                 <div class="p-2 first-row">
                     <span class="m-0 profile-name">Christian Tania</span>
-                    <i class="fa-regular fa-lightbulb light-bulb"></i>
+                    @if(isDarkMode) {
+                        <i class="fa-solid fa-lightbulb" (click)="toggleDarkMode()"></i>
+                    } @else {
+                        <i class="fa-regular fa-lightbulb" (click)="toggleDarkMode()"></i>
+                    }
                 </div>
         </div>
         <div class="row">

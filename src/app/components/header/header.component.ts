@@ -9,6 +9,12 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
+  isDarkMode: boolean = false;
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+  }
+
   scheduleCall() {
     window.open('https://calendly.com/tania-christian/30min', '_blank');
   }
