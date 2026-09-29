@@ -13,15 +13,22 @@ export class WorkExperienceComponent implements AfterViewInit {
 
   experiences = [
     {
+      id: 4,
+      role: 'Senior Back End Developer',
+      company: 'KPMG Philippines',
+      duration: '2026',
+      info: 'January 2026 - September 2026'
+    },
+    {
       id: 3,
       role: 'Web Developer',
       company: 'Frontier Software Asia',
-      duration: 'Present',
-      info: 'July 2023 - Present'
+      duration: '2023',
+      info: 'July 2023 - January 2026'
     },
-    { 
+    {
       id: 2,
-      role: 'Sr. Software Engineer',
+      role: 'Software Engineering Sr. Analyst',
       company: 'Accenture',
       duration: '2021',
       info: 'May 2021 - June 2023'
